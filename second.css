@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the whole page */
+body {
+
+  background-color: #a5a29e;
+  padding: 30px;
+}
+
+/* Center the page heading */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 30px;
+  color: #1a1a1a;
+}
+
+/* flexbox to align row  */
+
+.shop {
+  display: flex;           /* turn on flexbox */
+  flex-direction: row;     /* place cards LEFT to RIGHT */
+  justify-content: center; /* center all cards on the page */
+  gap: 20px;               /* space between each card */
+}
+
+/* flexbox on each card */
+.card {
+  display: flex;           /* turn on flexbox inside card */
+  flex-direction: column;  /* stack items TOP to BOTTOM */
+  align-items: center;     /* center everything horizontally */
+  width: 220px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+/* Product image */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Product name */
+.card h2 {
+  font-size: 16px;
+  color: #1a1a1a;
+  margin-top: 12px;
+}
+
+/* Product price */
+.card .price {
+  font-size: 18px;
+  color: #c0392b;
+  margin-top: 8px;
+}
+
+/* Buy Now button */
+.card button {
+  margin-top: 12px;
+  background: #1a1a1a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #444;
+}
